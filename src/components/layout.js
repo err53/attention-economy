@@ -8,9 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Flex, Spacer, Stack, Link } from "@chakra-ui/react"
 
 import Header from "./header"
-import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -24,25 +24,16 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <Flex direction="column">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+      <Stack mx="auto" p={{ base: "2", sm: "4", md: "6" }} maxW="960px">
+        {children}
+      </Stack>
+      <Flex mx="auto" p={{ base: "2", sm: "4", md: "6" }} w="100%" maxW="960px">
+        <Link href="/bib">Link to bibliography</Link>
+        <Spacer />
+      </Flex>
+    </Flex>
   )
 }
 

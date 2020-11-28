@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256.0px"
+   height="256.0px"
+   viewBox="0 0 256.0 256.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="favicon.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <defs
+     id="defs833">
+    <rect
+       x="152"
+       y="156"
+       width="40"
+       height="56"
+       id="rect1455" />
+    <rect
+       x="116"
+       y="112"
+       width="78.948424"
+       height="67.966223"
+       id="rect1449" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect1445"
+       is_visible="true"
+       lpeversion="1"
+       satellites_param="F,0,0,1,0,8,0,1 @ F,0,0,1,0,8,0,1 @ F,0,0,1,0,8,0,1"
+       unit="px"
+       method="auto"
+       mode="F"
+       radius="8"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <rect
+       x="116"
+       y="112"
+       width="78.948424"
+       height="67.966223"
+       id="rect127" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="112.02053"
+     inkscape:cy="174.42443"
+     inkscape:document-units="px"
+     inkscape:current-layer="g123"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="950"
+     inkscape:window-height="1019"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="0"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid1403"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata836">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="bg"
+     sodipodi:insensitive="true"
+     style="display:inline">
+    <rect
+       style="fill:#ea0000;fill-opacity:1"
+       id="rect1500"
+       width="256"
+       height="256"
+       x="0"
+       y="0" />
+  </g>
+  <g
+     inkscape:label="symbols"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:none">
+    <g
+       id="g1474"
+       transform="matrix(2.5267225,0,0,2.5267225,-203.03891,-207.6108)">
+      <text
+         xml:space="preserve"
+         id="text1447"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:-8.193px;white-space:pre;shape-inside:url(#rect1449);fill:#ffffff;fill-opacity:1;stroke:none;"
+         transform="matrix(1.958536,0,0,1.958536,-131.52497,-128.37293)"><tspan
+           x="116"
+           y="147.90909"><tspan
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Input Serif Narrow';-inkscape-font-specification:'Input Serif Narrow';fill:#ffffff;fill-opacity:1">$!</tspan></tspan></text>
+    </g>
+  </g>
+  <g
+     inkscape:label="symbols non font"
+     inkscape:groupmode="layer"
+     id="g125"
+     style="display:inline">
+    <g
+       id="g123"
+       transform="matrix(2.5267225,0,0,2.5267225,-203.03891,-207.6108)">
+      <g
+         aria-label="$!"
+         transform="matrix(1.958536,0,0,1.958536,-131.52497,-128.37293)"
+         id="text121"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;letter-spacing:-8.193px;white-space:pre;shape-inside:url(#rect127);fill:#ffffff;fill-opacity:1;stroke:none">
+        <path
+           d="m 122.65455,127.18182 q 0,1.45454 0.90909,2.4 0.90909,0.90909 3.34545,1.74545 v -7.74545 q -2,0.0727 -3.12727,0.87273 -1.12727,0.76363 -1.12727,2.72727 z m 10.76363,12.32727 q 0,-1.49091 -0.98182,-2.4 -0.94545,-0.94545 -3.45454,-1.78182 V 143.4 q 2.03636,-0.0727 3.23636,-1.01818 1.2,-0.94546 1.2,-2.87273 z m -4.07273,10.21818 h -2.76363 V 146.2 q -2.03637,-0.18182 -4,-0.8 -1.92727,-0.65455 -3.27273,-1.67273 l 1.01818,-2.87272 q 1.45455,1.01818 3.2,1.63636 1.74546,0.61818 3.38182,0.8 v -8.58182 q -4.10909,-1.16364 -5.78182,-2.83636 -1.63636,-1.70909 -1.63636,-4.54546 0,-3.16363 1.74545,-4.87272 1.78182,-1.7091 5.34546,-1.92728 V 117 h 2.76363 v 3.56364 q 1.78182,0.18181 3.49091,0.72727 1.70909,0.50909 2.87273,1.30909 l -1.01818,2.94545 q -1.30909,-0.76363 -2.8,-1.23636 -1.45455,-0.47273 -2.90909,-0.61818 v 8.29091 q 4.21818,1.23636 5.89091,2.90909 1.70909,1.67273 1.70909,4.4 0,3.16364 -1.89091,4.94545 -1.85455,1.78182 -5.34546,2.03637 z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Input Serif Narrow';-inkscape-font-specification:'Input Serif Narrow';fill:#ffffff;fill-opacity:1"
+           id="path129" />
+        <path
+           d="m 142.20693,137 -0.98182,-18.18182 h 4.83637 L 145.07966,137 Z m 1.49091,11.27273 q -1.70909,0 -2.54546,-0.72728 -0.8,-0.76363 -0.8,-2.32727 V 144.2 q 0,-1.6 0.8,-2.36364 0.83637,-0.76363 2.54546,-0.76363 1.70909,0 2.47273,0.76363 0.8,0.76364 0.8,2.36364 v 1.01818 q 0,1.56364 -0.8,2.32727 -0.8,0.72728 -2.47273,0.72728 z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Input Serif Narrow';-inkscape-font-specification:'Input Serif Narrow';fill:#ffffff;fill-opacity:1"
+           id="path131" />
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="maskable"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <circle
+       style="fill:#000000;fill-opacity:0.502496"
+       id="path1495"
+       cx="128"
+       cy="128"
+       r="102" />
+  </g>
+</svg>
