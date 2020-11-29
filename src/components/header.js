@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
       px={{ base: "2", sm: "4", md: "6" }}
       py="4"
     >
-      <Heading size="xl" as="h1" m="0" color="white">
+      <Heading size="3xl" as="h1" m="0" color="white">
         {siteTitle}
       </Heading>
       <Spacer />

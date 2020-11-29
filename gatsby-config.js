@@ -20,11 +20,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `The Attention Economy`,
+        short_name: `Attention Economy`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#ffffff`,
+        theme_color: `#2a4365`,
         display: `minimal-ui`,
         icon: `src/images/favicon.svg`, // This path is relative to the root of the site.
       },
