@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/attention-economy",
   siteMetadata: {
     title: `The Attention Economy`,
     description: `Or, why social media is the way it is`,
