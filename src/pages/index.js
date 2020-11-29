@@ -88,7 +88,7 @@ const IndexPage = () => {
         searched for, or
       </Text>
 
-      <Link href="/bib">Link to bibliography</Link>
+      <Link href="bib.html">Link to bibliography</Link>
     </Layout>
   )
 }
