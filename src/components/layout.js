@@ -26,13 +26,14 @@ const Layout = ({ children }) => {
   return (
     <Flex direction="column">
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Stack mx="auto" p={{ base: "2", sm: "4", md: "6" }} maxW="960px">
+      <Stack
+        mx="auto"
+        p={{ base: "2", sm: "4", md: "6" }}
+        w="100%"
+        maxW="960px"
+      >
         {children}
       </Stack>
-      <Flex mx="auto" p={{ base: "2", sm: "4", md: "6" }} w="100%" maxW="960px">
-        <Link href="/bib">Link to bibliography</Link>
-        <Spacer />
-      </Flex>
     </Flex>
   )
 }

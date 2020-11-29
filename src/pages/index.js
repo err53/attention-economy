@@ -14,7 +14,7 @@ import IconHighlight from "../components/iconHighlight"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Heading, Text, Flex, Box, Stack } from "@chakra-ui/react"
+import { Heading, Text, Flex, Box, Stack, Link } from "@chakra-ui/react"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -84,8 +84,11 @@ const IndexPage = () => {
         advertisements.
       </Text>
       <Text>
-        It's no mistake that you'll see advertisements for items you've recently searched for, or 
+        It's no mistake that you'll see advertisements for items you've recently
+        searched for, or
       </Text>
+
+      <Link href="/bib">Link to bibliography</Link>
     </Layout>
   )
 }
