@@ -55,7 +55,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="The Attention Economy" />
-      <Text fontSize="3xl">Or, how social media took over our time</Text>
+      <Text fontSize="3xl">Or, why social media is the way it is</Text>
 
       <Divider />
 
