@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
-import { Flex, Spacer, Stack, Link } from "@chakra-ui/react"
+import { Flex, Stack } from "@chakra-ui/react"
 
 import Header from "./header"
 

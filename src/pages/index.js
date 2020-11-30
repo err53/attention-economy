@@ -21,8 +21,7 @@ import {
   Box,
   Stack,
   Link,
-  HStack,
-  Spacer,
+  Divider,
   Wrap,
 } from "@chakra-ui/react"
 
@@ -36,22 +35,36 @@ const IndexPage = () => {
           }
         }
       }
+      instagramAlgo: file(relativePath: { eq: "instagram-algo.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
+      fbCountries: file(relativePath: { eq: "fb-countries.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+        }
+      }
     }
   `)
 
   return (
     <Layout>
       <SEO title="The Attention Economy" />
-      <Text>
-        Phones are addictive, social media is taking over our lives, and we seem
-        to be less able to pay attention.
-      </Text>
-      <Text>
-        <b>How did we get here?</b>
-      </Text>
-      <Flex direction={{ base: "column", md: "row" }}>
-        <Stack width={{ base: "100%", md: "40%" }}>
-          <Heading as="h2" size="2xl" mb="2">
+      <Text fontSize="3xl">Or, how social media took over our time</Text>
+
+      <Divider />
+
+      <Flex
+        direction={{ base: "column", md: "row" }}
+        align={{ base: "-moz-initial", md: "center" }}
+      >
+        <Stack flex="0 4 100%">
+          <Heading as="h2" size="2xl">
             A quick introduction
           </Heading>
           <Text>
@@ -64,13 +77,14 @@ const IndexPage = () => {
             want
           </Text>
         </Stack>
-        <Box width={{ base: "100%", md: "60%" }} mx="auto">
-          <Img fluid={data.attentionVsInfo.childImageSharp.fluid} />
+        <Box flex="0 1 100%" pr="8">
+          <Img
+            fluid={data.attentionVsInfo.childImageSharp.fluid}
+            objectFit="scale"
+          />
         </Box>
       </Flex>
-      <Heading as="h3" size="xl" mb="2">
-        So, what's the problem?
-      </Heading>
+      <Heading as="h3">So, what's the problem?</Heading>
       <Text>
         To figure out what you want, companies need data. A <lot>lot</lot> of
         data.
@@ -89,34 +103,60 @@ const IndexPage = () => {
         <IconHighlight icon={FaSms} text="SMS Logs" />
       </Wrap>
       <Text>
-        What do they do with that data? Well what else than target
-        advertisements.
+        What do they do with that data? Two things: <br /> They keep you on
+        their platform for longer, and they target advertisements towards you.
       </Text>
+
+      <Heading as="h3">
+        <s>Addiction</s> Engagement 101
+      </Heading>
+
+      <Text>Customizing content to users is extremely effective.</Text>
+      <Stack
+        spacing="4"
+        direction={{ base: "column", sm: "row" }}
+        alignItems="center"
+        width="100%"
+      >
+        <Box flex="0 1 100%" pr="8">
+          <Img
+            fluid={data.instagramAlgo.childImageSharp.fluid}
+            objectFit="scale"
+          />
+        </Box>
+        <Text flex="0 2 auto">
+          That's right, 50%. This increased reach obviously means that Instagram
+          has gotten people to use their platform more through the algorithm.
+          How much has usage increased? Instagram doesn't say.
+        </Text>
+      </Stack>
+
+      <Heading as="h3">Advertisements, or how to make money from users</Heading>
       <Text>
-        It's no mistake that you'll see advertisements for items you've recently
-        searched for, or things you're interested in.
+        Ever notice how after you search for products, ads for that product
+        appear? Or how ads seem to follow you around the internet? That's no
+        mistake. That's targeted advertising.
       </Text>
-      <Stack spacing="4" direction={{ base: "column", sm: "row" }}>
-        <Flex>
-          <Flex
-            boxSize="8rem"
-            borderWidth="1px"
-            borderRadius="10px"
-            p="4"
-            m="2"
-            transition="transform 0.2s"
-            transitionTimingFunction="ease"
-            _hover={{
-              transform: "scale(1.10)",
-            }}
-            justifyContent="center"
-            alignItems="center"
-            shadow="md"
-          >
-            <Text fontSize="4rem" as="b">
-              3&times;
-            </Text>
-          </Flex>
+      <Stack
+        spacing="4"
+        direction={{ base: "column", sm: "row" }}
+        alignItems="center"
+      >
+        <Flex
+          flex="0 0 7rem"
+          h="7rem"
+          borderWidth="1px"
+          borderRadius="10px"
+          transition="transform 0.2s"
+          transitionTimingFunction="ease"
+          _hover={{
+            transform: "scale(1.10)",
+          }}
+          justify="center"
+          align="center"
+          shadow="md"
+        >
+          <Text fontSize="4xl">3&times;</Text>
         </Flex>
         <Text>
           That's how much more money companies can charge for target
@@ -125,6 +165,57 @@ const IndexPage = () => {
         </Text>
       </Stack>
 
+      <Divider />
+      <Heading as="h2" size="2xl">
+        How does affect the world?
+      </Heading>
+      <Heading as="h3">Society and Cultures</Heading>
+      <Stack
+        spacing="4"
+        direction={{ base: "column", sm: "row" }}
+        alignItems="center"
+        width="100%"
+      >
+        <Stack flex="0 2 100%">
+          <Text>
+            There are benefits to the use of your attention as an economical
+            resource. Attention does not require payment, and so, social media
+            companies are able to provide their services without any monetary
+            cost to the user.
+          </Text>
+          <Text>
+            For example, developing countries like India make up a significant
+            amount of Facebook users, since it's a free, easy way to keep in
+            touch with family members.
+          </Text>
+        </Stack>
+        <Box flex="0 1 100%" pr="8">
+          <Img
+            fluid={data.fbCountries.childImageSharp.fluid}
+            objectFit="scale"
+          />
+        </Box>
+      </Stack>
+
+      <Heading as="h2" size="2xl">
+        Why should I care?
+      </Heading>
+      <Text>We have a fundamental right to freedom.</Text>
+
+      <Text borderWidth="1px" borderRadius="10px" p="4">
+        <b>Article 12</b> <br />
+        No one shall be subjected to arbitrary interference with his privacy,
+        family, home or correspondence, nor to attacks upon his honour and
+        reputation. Everyone has the right to the protection of the law against
+        such interference or attacks.
+      </Text>
+
+      <Text>
+        Companies should be the ones explaning why they are infringing on our
+        rights, not the other way around.
+      </Text>
+
+      <Divider />
       <Link href="bib.html">Link to bibliography</Link>
     </Layout>
   )
