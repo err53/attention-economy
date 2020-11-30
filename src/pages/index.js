@@ -37,14 +37,14 @@ const IndexPage = () => {
       }
       instagramAlgo: file(relativePath: { eq: "instagram-algo.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
       }
       fbCountries: file(relativePath: { eq: "fb-countries.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 700) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
         }
