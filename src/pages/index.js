@@ -84,117 +84,129 @@ const IndexPage = () => {
           />
         </Box>
       </Flex>
-      <Heading as="h3">So, what's the problem?</Heading>
-      <Text>
-        To figure out what you want, companies need data. A <lot>lot</lot> of
-        data.
-      </Text>
-      <Text>
-        For example, these are some of the things Facebook has been known to
-        track:
-      </Text>
-      <Wrap justify="center" align="space-around" spacing="4">
-        <IconHighlight icon={FaGlobe} text="Websites Visited" />
-        <IconHighlight icon={FaLocationArrow} text="Location Data" />
-        <IconHighlight icon={FaHeart} text="Interests" />
-        <IconHighlight icon={FaAd} text="Advertisement Interactions" />
-        <IconHighlight icon={FaUserTag} text="Demographics" />
-        <IconHighlight icon={FaPhone} text="Call Logs" />
-        <IconHighlight icon={FaSms} text="SMS Logs" />
-      </Wrap>
-      <Text>
-        What do they do with that data? Two things: <br /> They keep you on
-        their platform for longer, and they target advertisements towards you.
-      </Text>
 
-      <Heading as="h3">
-        <s>Addiction</s> Engagement 101
-      </Heading>
-
-      <Text>Customizing content to users is extremely effective.</Text>
-      <Stack
-        spacing="4"
-        direction={{ base: "column", sm: "row" }}
-        alignItems="center"
-        width="100%"
-      >
-        <Box flex="0 1 100%" pr="8">
-          <Img
-            fluid={data.instagramAlgo.childImageSharp.fluid}
-            objectFit="scale"
-          />
-        </Box>
-        <Text flex="0 2 auto">
-          That's right, 50%. This increased reach obviously means that Instagram
-          has gotten people to use their platform more through the algorithm.
-          How much has usage increased? Instagram doesn't say.
+      <Stack>
+        <Heading as="h3">So, what's the problem?</Heading>
+        <Text>
+          To figure out what you want, companies need data. A <lot>lot</lot> of
+          data.
+        </Text>
+        <Text>
+          For example, these are some of the things Facebook has been known to
+          track:
+        </Text>
+        <Wrap justify="center" align="space-around" spacing="4">
+          <IconHighlight icon={FaGlobe} text="Websites Visited" />
+          <IconHighlight icon={FaLocationArrow} text="Location Data" />
+          <IconHighlight icon={FaHeart} text="Interests" />
+          <IconHighlight icon={FaAd} text="Advertisement Interactions" />
+          <IconHighlight icon={FaUserTag} text="Demographics" />
+          <IconHighlight icon={FaPhone} text="Call Logs" />
+          <IconHighlight icon={FaSms} text="SMS Logs" />
+        </Wrap>
+        <Text>
+          What do they do with that data? Two things: <br /> They keep you on
+          their platform for longer, and they target advertisements towards you.
         </Text>
       </Stack>
 
-      <Heading as="h3">Advertisements, or how to make money from users</Heading>
-      <Text>
-        Ever notice how after you search for products, ads for that product
-        appear? Or how ads seem to follow you around the internet? That's no
-        mistake. That's targeted advertising.
-      </Text>
-      <Stack
-        spacing="4"
-        direction={{ base: "column", sm: "row" }}
-        alignItems="center"
-      >
-        <Flex
-          flex="0 0 7rem"
-          h="7rem"
-          borderWidth="1px"
-          borderRadius="10px"
-          transition="transform 0.2s"
-          transitionTimingFunction="ease"
-          _hover={{
-            transform: "scale(1.10)",
-          }}
-          justify="center"
-          align="center"
-          shadow="md"
+      <Stack>
+        <Heading as="h3">
+          <s>Addiction</s> Engagement 101
+        </Heading>
+
+        <Text>Customizing content to users is extremely effective.</Text>
+        <Stack
+          spacing="4"
+          direction={{ base: "column", sm: "row" }}
+          alignItems="center"
+          width="100%"
         >
-          <Text fontSize="4xl">3&times;</Text>
-        </Flex>
+          <Box flex="0 1 100%" pr="8">
+            <Img
+              fluid={data.instagramAlgo.childImageSharp.fluid}
+              objectFit="scale"
+            />
+          </Box>
+          <Text flex="0 2 auto">
+            That's right, 50%. This increased reach obviously means that
+            Instagram has gotten people to use their platform more through the
+            algorithm. How much has usage increased? Instagram doesn't say.
+          </Text>
+        </Stack>
+      </Stack>
+
+      <Stack>
+        <Heading as="h3">
+          Advertisements, or how to make money from users
+        </Heading>
         <Text>
-          That's how much more money companies can charge for target
-          advertising. There's a lot of money go be gained from knowing exactly
-          what you want.
+          Ever notice how after you search for products, ads for that product
+          appear? Or how ads seem to follow you around the internet? That's no
+          mistake. That's targeted advertising.
         </Text>
+        <Stack
+          spacing="4"
+          direction={{ base: "column", sm: "row" }}
+          alignItems="center"
+        >
+          <Flex
+            flex="0 0 7rem"
+            h="7rem"
+            borderWidth="1px"
+            borderRadius="10px"
+            transition="transform 0.2s"
+            transitionTimingFunction="ease"
+            _hover={{
+              transform: "scale(1.10)",
+            }}
+            justify="center"
+            align="center"
+            shadow="md"
+          >
+            <Text fontSize="4xl">3&times;</Text>
+          </Flex>
+          <Text>
+            That's how much more money companies can charge for target
+            advertising. There's a lot of money go be gained from knowing
+            exactly what you want.
+          </Text>
+        </Stack>
       </Stack>
 
       <Divider />
+
       <Heading as="h2" size="2xl">
-        How does affect the world?
+        How does this affect the world?
       </Heading>
-      <Heading as="h3">Society and Cultures</Heading>
-      <Stack
-        spacing="4"
-        direction={{ base: "column", sm: "row" }}
-        alignItems="center"
-        width="100%"
-      >
-        <Stack flex="0 2 100%">
-          <Text>
-            There are benefits to the use of your attention as an economical
-            resource. Attention does not require payment, and so, social media
-            companies are able to provide their services without any monetary
-            cost to the user.
-          </Text>
-          <Text>
-            For example, developing countries like India make up a significant
-            amount of Facebook users, since it's a free, easy way to keep in
-            touch with family members.
-          </Text>
+      <Stack>
+        <Heading as="h3">Society and Cultures</Heading>
+        <Stack
+          spacing="4"
+          direction={{ base: "column", sm: "row" }}
+          alignItems="center"
+          width="100%"
+        >
+          <Stack flex="0 2 100%">
+            <Text>
+              There are benefits to the use of your attention as an economical
+              resource. Attention does not require payment, and so, social media
+              companies are able to provide their services without any monetary
+              cost to the user.
+            </Text>
+            <Text>
+              For example, developing countries like India make up a significant
+              amount of Facebook users, since it's a free, easy way to keep in
+              touch with family members.
+            </Text>
+          </Stack>
+          <Box flex="0 1 100%" pr="8">
+            <Img
+              fluid={data.fbCountries.childImageSharp.fluid}
+              objectFit="scale"
+            />
+          </Box>
         </Stack>
-        <Box flex="0 1 100%" pr="8">
-          <Img
-            fluid={data.fbCountries.childImageSharp.fluid}
-            objectFit="scale"
-          />
-        </Box>
       </Stack>
 
       <Heading as="h2" size="2xl">

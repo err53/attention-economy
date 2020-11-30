@@ -31,6 +31,7 @@ const Layout = ({ children }) => {
         p={{ base: "2", sm: "4", md: "6" }}
         w="100%"
         maxW="960px"
+        spacing="8"
       >
         {children}
       </Stack>
