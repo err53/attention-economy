@@ -32,7 +32,7 @@ const IndexPage = () => {
     query {
       attentionVsInfo: file(relativePath: { eq: "attention-vs-info.png" }) {
         childImageSharp {
-          fluid(maxWidth: 800) {
+          fluid(maxWidth: 900) {
             ...GatsbyImageSharpFluid_withWebp_tracedSVG
           }
           original {
