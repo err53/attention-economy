@@ -104,7 +104,7 @@ const IndexPage = () => {
 
       <Stack
         direction={{ base: "column", md: "row" }}
-        align={{ base: "-moz-initial", md: "center" }}
+        align={{ base: "-moz-initial", md: "top" }}
         spacing="4"
       >
         <Stack flex="0 4 100%">
