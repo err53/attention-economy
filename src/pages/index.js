@@ -228,18 +228,17 @@ const IndexPage = () => {
 
           <Text>Customizing content to users is extremely effective.</Text>
           <Text>
-            That's right, 50%. This increased reach obviously means that
-            Instagram has gotten people to use their platform more through the
-            algorithm. How much has usage increased? Instagram doesn't say.
+            Instagram has seen view rates increase by 50% after switching to an
+            algorithmic feed. That's right, 50%.
           </Text>
           <Text>
             Furthermore, a research paper published by YouTube engineers say
             they explicitly target high watch times in their machine learning
-            algorithms. These high watch times directly correlate with the
-            amount of time users are spending on their platform. In a nutshell,
-            YouTube wants viewers to use their platform more, through whatever
-            means possible. Given YouTube's continued growth over the years,
-            it's clearly working.
+            algorithms.
+          </Text>
+          <Text>
+            Clearly, the attention economy has encouraged companies to focus on
+            keeping users in their app for as long as possible.
           </Text>
         </Stack>
       </Stack>
@@ -250,23 +249,12 @@ const IndexPage = () => {
         </Heading>
         <Text>
           The whole point of getting users to use a platform is so you can
-          monetize them. The most common way to do this is to show them ads.
-          That's why attention has been called the currency of the internet.
-          With attention comes advertisement views and clicks, which creates
-          profit.
+          monetize them, through ads. However, we also have a bunch of user data
+          to play with, why not use it to make the advertisements more
+          effective? Ever notice how after you search for products, ads for that
+          product appear? That's no mistake, that's targeted advertising.
         </Text>
-        <Text>
-          However, we also have a bunch of user data to play with, why not use
-          it to make the advertisements more effective? Ever notice how after
-          you search for products, ads for that product appear? Or how ads seem
-          to follow you around the internet? That's no mistake. That's targeted
-          advertising.
-        </Text>
-        <Stack
-          spacing="4"
-          direction={{ base: "column", sm: "row" }}
-          alignItems="center"
-        >
+        <Stack spacing="4" direction="row" alignItems="center">
           <Flex
             flex="0 0 auto"
             boxSize="7rem"
@@ -336,14 +324,10 @@ const IndexPage = () => {
           bgColor="red.50"
         >
           <Text>
-            Companies want you to stay on their apps for as long as possible.
-            How better than to get you addicted? Aside from the targeted content
-            designed to keep you coming back, companies encourage a steady
-            stream of positive rewards, even when you're not using the app.
-            Think of the slow trickle of social media likes you get after making
-            a post. The occasional notifications that your friends have been
-            posting things. These are all hooks designed to get you re-engaged
-            with the app.
+            Aside from the targeted content designed to keep you coming back,
+            companies encourage a steady stream of positive rewards, even when
+            you're not using the app. Like and comment notifications are all
+            hooks designed to get you re-engaged with the app.
           </Text>
           <Box flex="0 1 auto" w="100%">
             <a href={data.pushNotifications.childImageSharp.original.src}>
@@ -365,9 +349,8 @@ const IndexPage = () => {
             The cost of sending emails has dropped dramatically since the early
             days of the internet, a fact which marketers have taken advantage
             of. Today, around 300 billion emails are sent, a good number of
-            which are marketing emails. This leads to overcrowded inboxes and
-            makes email a less appealing communication tool for the general
-            public.
+            which are marketing emails. This leads to overcrowded inboxes and a
+            worse experience for consumers.
           </Text>
           <Box flex="0 1 auto" w="100%">
             <a href={data.emailsSentWorldwide.childImageSharp.original.src}>
@@ -419,7 +402,7 @@ const IndexPage = () => {
       </SimpleGrid>
       {/* TODO: Add some images here or smth idk */}
 
-      <Heading as="h3">How does this affect the economy?</Heading>
+      <Heading as="h3">Economy</Heading>
       <Text>
         The attention economy won't replace the traditional economy anytime
         soon. However, it's impacts can be seen across not just the tech sector,
@@ -492,7 +475,7 @@ const IndexPage = () => {
       <Heading as="h2" size="2xl">
         Why should I care?
       </Heading>
-      <Text>We have a fundamental right to freedom.</Text>
+      <Text>We have a fundamental right to privacy.</Text>
 
       <Text borderWidth="1px" borderRadius="10px" p="4" shadow="md">
         <b>Article 12</b> <br />
@@ -508,23 +491,19 @@ const IndexPage = () => {
       </Text>
 
       <Text>
-        Everyone values their data differently. Some believe that the
-        convenience from giving up this data is worth it for the convenience.
-        Others may not want their data being collected. The problem is, we as
-        consumers don't have any say in the matter, aside from not using the
-        internet.
+        The problem is, we as consumers don't have any say in the matter, aside
+        from not using the internet.
       </Text>
 
       <Text>
         Companies need to be more transparent with the data they're collecting,
-        and should allow consumers to turn off personalization if they wish.
-        Policies like Europe's GDPR, or California's more stringent privacy laws
-        are a step in the right direction, and more countries should implement
-        similar consumer-first data protection laws.
+        and should allow consumers to turn off personalization and data
+        collection if they wish. Stronger legislation like the GDPR laws in
+        Europe would force companies to respect user privacy more.
       </Text>
 
       <Divider />
-      <Link href="bib.html">Link to bibliography</Link>
+      <Link href="bib.html" color="blue.500">Link to bibliography</Link>
     </Layout>
   )
 }
