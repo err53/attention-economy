@@ -24,7 +24,6 @@ import {
   Divider,
   Wrap,
   SimpleGrid,
-  HStack,
 } from "@chakra-ui/react"
 
 const IndexPage = () => {
@@ -92,6 +91,38 @@ const IndexPage = () => {
           }
         }
       }
+      emailsSentWorldwide: file(
+        relativePath: { eq: "emails-sent-worldwide.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+          original {
+            src
+          }
+        }
+      }
+      paradox: file(relativePath: { eq: "paradox.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+          original {
+            src
+          }
+        }
+      }
+      twitch: file(relativePath: { eq: "twitch.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          }
+          original {
+            src
+          }
+        }
+      }
     }
   `)
 
@@ -116,7 +147,7 @@ const IndexPage = () => {
             limited amount of attention, but there is an endless amount of
             information to consume.
           </Text>
-          <Text>Content is generated at an unbelivable rate.</Text>
+          <Text>Content is generated at an unbelievable rate.</Text>
         </Stack>
         <Stack flex="0 3 100%">
           <Box>
@@ -182,7 +213,7 @@ const IndexPage = () => {
         // alignItems="center"
         width="100%"
       >
-        <Box flex="0 1.5 100%">
+        <Box flex="0 1 100%">
           <a href={data.instagramAlgo.childImageSharp.original.src}>
             <Img
               fluid={data.instagramAlgo.childImageSharp.fluid}
@@ -190,28 +221,46 @@ const IndexPage = () => {
             />
           </a>
         </Box>
-        <Stack>
+        <Stack flex="0 1 auto">
           <Heading as="h3">
             <s>Addiction</s> Engagement 101
           </Heading>
 
           <Text>Customizing content to users is extremely effective.</Text>
-          <Text flex="0 1 auto">
+          <Text>
             That's right, 50%. This increased reach obviously means that
             Instagram has gotten people to use their platform more through the
             algorithm. How much has usage increased? Instagram doesn't say.
+          </Text>
+          <Text>
+            Furthermore, a research paper published by YouTube engineers say
+            they explicitly target high watch times in their machine learning
+            algorithms. These high watch times directly correlate with the
+            amount of time users are spending on their platform. In a nutshell,
+            YouTube wants viewers to use their platform more, through whatever
+            means possible. Given YouTube's continued growth over the years,
+            it's clearly working.
           </Text>
         </Stack>
       </Stack>
 
       <Stack>
         <Heading as="h3">
-          Advertisements, or how to make money from users
+          Targeted Advertisements, or how to make money from users
         </Heading>
         <Text>
-          Ever notice how after you search for products, ads for that product
-          appear? Or how ads seem to follow you around the internet? That's no
-          mistake. That's targeted advertising.
+          The whole point of getting users to use a platform is so you can
+          monetize them. The most common way to do this is to show them ads.
+          That's why attention has been called the currency of the internet.
+          With attention comes advertisement views and clicks, which creates
+          profit.
+        </Text>
+        <Text>
+          However, we also have a bunch of user data to play with, why not use
+          it to make the advertisements more effective? Ever notice how after
+          you search for products, ads for that product appear? Or how ads seem
+          to follow you around the internet? That's no mistake. That's targeted
+          advertising.
         </Text>
         <Stack
           spacing="4"
@@ -255,10 +304,9 @@ const IndexPage = () => {
           shadow="md"
           p="4"
           bgColor="green.50"
-          spacing="4"
           flexDir="column"
         >
-          <Stack flex="0 1 100%" pb="4">
+          <Stack flex="0 1 100%">
             <Text>
               There are benefits to the use of your attention as an economical
               resource. Attention does not require payment, and so, social media
@@ -306,6 +354,54 @@ const IndexPage = () => {
             </a>
           </Box>
         </Stack>
+        <Stack
+          borderWidth="1px"
+          borderRadius="10px"
+          shadow="md"
+          p="4"
+          bgColor="red.50"
+        >
+          <Text flex="0 1 100%">
+            The cost of sending emails has dropped dramatically since the early
+            days of the internet, a fact which marketers have taken advantage
+            of. Today, around 300 billion emails are sent, a good number of
+            which are marketing emails. This leads to overcrowded inboxes and
+            makes email a less appealing communication tool for the general
+            public.
+          </Text>
+          <Box flex="0 1 auto" w="100%">
+            <a href={data.emailsSentWorldwide.childImageSharp.original.src}>
+              <Img
+                fluid={data.emailsSentWorldwide.childImageSharp.fluid}
+                objectFit="scale-down"
+              />
+            </a>
+          </Box>
+        </Stack>
+        <Stack
+          borderWidth="1px"
+          borderRadius="10px"
+          shadow="md"
+          p="4"
+          bgColor="red.50"
+        >
+          <Text>
+            Consumers want both personalized content, but also want their data
+            to be private and inaccessible by corporations. Unless all
+            recommendation algorithms are run locally, which is still
+            infeasible, there is no way for both these desires to be fulfilled.
+            This concept is known as the{" "}
+            <b>Personalization vs. Privacy Paradox</b>
+          </Text>
+          <Box flex="0 1 auto" w="100%">
+            <a href={data.paradox.childImageSharp.original.src}>
+              <Img
+                fluid={data.paradox.childImageSharp.fluid}
+                objectFit="scale-down"
+              />
+            </a>
+          </Box>
+        </Stack>
         <Box
           borderWidth="1px"
           borderRadius="10px"
@@ -320,25 +416,8 @@ const IndexPage = () => {
             content and viewpoints dominating media.
           </Text>
         </Box>
-        <Box
-          borderWidth="1px"
-          borderRadius="10px"
-          shadow="md"
-          p="4"
-          bgColor="red.50"
-        >
-          <Text>Something about spam idk yet</Text>
-        </Box>
-        <Box
-          borderWidth="1px"
-          borderRadius="10px"
-          shadow="md"
-          p="4"
-          bgColor="red.50"
-        >
-          <Text>Something about privacy idk yet</Text>
-        </Box>
       </SimpleGrid>
+      {/* TODO: Add some images here or smth idk */}
 
       <Heading as="h3">How does this affect the economy?</Heading>
       <Text>
@@ -356,7 +435,7 @@ const IndexPage = () => {
         >
           <Text flex="0 1 auto" pb="4">
             Companies that have been able to capitalize on this have turned
-            great profits. Out of the top 10 tech compaies by market cap, over
+            great profits. Out of the top 10 tech companies by market cap, over
             half of them directly profit in some way through the collection of
             user data.
           </Text>
@@ -370,7 +449,7 @@ const IndexPage = () => {
             </a>
           </Box>
         </Stack>
-        <Box
+        <Stack
           borderWidth="1px"
           borderRadius="10px"
           shadow="md"
@@ -378,13 +457,21 @@ const IndexPage = () => {
           bgColor="green.50"
         >
           <Text>
-            Despite the bad rep that advertisements have, they are essential for
-            helping newer businesses grow. Targeted advertisements are much more
-            effective than traditional ads, and thus allow for companies to
-            promote their products to a wider audience without spending as much
-            money.
+            The influencer culture grew from the increasing accessibility of
+            media creation tools, combined with the excellent monetization tools
+            that platforms like YouTube and Twitch provide for their creators.
+            This has created many job opportunities and has opened up a new
+            field of employment and entrepreneurship.
           </Text>
-        </Box>
+          <Box flex="0 1 auto" w="100%">
+            <a href={data.twitch.childImageSharp.original.src}>
+              <Img
+                fluid={data.twitch.childImageSharp.fluid}
+                objectFit="scale-down"
+              />
+            </a>
+          </Box>
+        </Stack>
         <Box
           borderWidth="1px"
           borderRadius="10px"
@@ -393,11 +480,11 @@ const IndexPage = () => {
           bgColor="green.50"
         >
           <Text>
-            Despite the bad rep that advertisements have, they are essential for
-            helping newer businesses grow. Targeted advertisements are much more
-            effective than traditional ads, and thus allow for companies to
-            promote their products to a wider audience without spending as much
-            money.
+            Despite the negative connotation that advertisements have, they are
+            essential for helping newer businesses grow. Targeted advertisements
+            are much more effective than traditional ads, and thus allow for
+            companies to promote their products to a wider audience without
+            spending as much money.
           </Text>
         </Box>
       </SimpleGrid>
@@ -416,8 +503,24 @@ const IndexPage = () => {
       </Text>
 
       <Text>
-        Companies should be the ones explaning why they are infringing on our
+        Companies should be the ones explaining why they are infringing on our
         rights, not the other way around.
+      </Text>
+
+      <Text>
+        Everyone values their data differently. Some believe that the
+        convenience from giving up this data is worth it for the convenience.
+        Others may not want their data being collected. The problem is, we as
+        consumers don't have any say in the matter, aside from not using the
+        internet.
+      </Text>
+
+      <Text>
+        Companies need to be more transparent with the data they're collecting,
+        and should allow consumers to turn off personalization if they wish.
+        Policies like Europe's GDPR, or California's more stringent privacy laws
+        are a step in the right direction, and more countries should implement
+        similar consumer-first data protection laws.
       </Text>
 
       <Divider />
