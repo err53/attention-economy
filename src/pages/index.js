@@ -24,6 +24,7 @@ import {
   Divider,
   Wrap,
   SimpleGrid,
+  HStack,
 } from "@chakra-ui/react"
 
 const IndexPage = () => {
@@ -446,6 +447,7 @@ const IndexPage = () => {
             This has created many job opportunities and has opened up a new
             field of employment and entrepreneurship.
           </Text>
+          <Text as="b">Twitch Viewership from 2012-2020:</Text>
           <Box flex="0 1 auto" w="100%">
             <a href={data.twitch.childImageSharp.original.src}>
               <Img
@@ -455,21 +457,40 @@ const IndexPage = () => {
             </a>
           </Box>
         </Stack>
-        <Box
+        <HStack
           borderWidth="1px"
           borderRadius="10px"
           shadow="md"
           p="4"
           bgColor="green.50"
+          spacing="4"
         >
+          <Flex
+            flex="0 0 auto"
+            boxSize="7rem"
+            borderWidth="1px"
+            borderRadius="10px"
+            transition="transform 0.2s"
+            transitionTimingFunction="ease"
+            _hover={{
+              transform: "scale(1.10)",
+            }}
+            justify="center"
+            align="center"
+            shadow="md"
+            bgColor="white"
+          >
+            <Text fontSize="4xl">79%</Text>
+          </Flex>
+
           <Text>
-            Despite the negative connotation that advertisements have, they are
-            essential for helping newer businesses grow. Targeted advertisements
-            are much more effective than traditional ads, and thus allow for
-            companies to promote their products to a wider audience without
-            spending as much money.
+            Targeted advertisements are around 79% more effective than
+            traditional ads, and thus allow for companies to promote their
+            products to a wider audience without spending as much money. This is
+            especially important for newer businesses who have a smaller
+            advertising budget.
           </Text>
-        </Box>
+        </HStack>
       </SimpleGrid>
 
       <Heading as="h2" size="2xl">
@@ -503,7 +524,9 @@ const IndexPage = () => {
       </Text>
 
       <Divider />
-      <Link href="bib.html" color="blue.500">Link to bibliography</Link>
+      <Link href="bib.html" color="blue.500">
+        Link to bibliography
+      </Link>
     </Layout>
   )
 }
